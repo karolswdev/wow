@@ -140,6 +140,7 @@ CREATE TABLE [dbo].[AddOnVersion](
 	[Id] [uniqueidentifier] NOT NULL,
 	[MajorVersion] [int] NOT NULL,
 	[MinorVersion] [int] NOT NULL,
+	[PathVersion] [int] NOT NULL,
 	[ReleaseNotes] [text] NOT NULL,
 	[AddOnId] [uniqueidentifier] NOT NULL,
  CONSTRAINT [PK_AddOnVersion] PRIMARY KEY CLUSTERED 

@@ -9,6 +9,7 @@ namespace WoW.Contract.Models
       public Guid Id { get; set; }
       public int MajorVersion { get; set; }
       public int MinorVersion { get; set; }
+      public int PatchVersion { get; set; }
       public string ReleaseNotes { get; set; }
       public int AddOnId { get; set; }
 

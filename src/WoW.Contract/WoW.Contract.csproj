@@ -6,4 +6,8 @@
     <RootNamespace>WoW.Contract</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Include="IAddOnRepository.cs" />
+  </ItemGroup>
+
 </Project>
