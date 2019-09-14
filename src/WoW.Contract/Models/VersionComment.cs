@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Dapper.Contrib.Extensions;
 
 namespace WoW.Contract.Models
 {
@@ -11,6 +12,8 @@ namespace WoW.Contract.Models
        public Guid? AuthorId { get; set; }
        public string CommentText { get; set; }
 
+       [Write(false)]
+       [Computed]
        public bool HasAuthor {
           get { return AuthorId.HasValue; }
        }

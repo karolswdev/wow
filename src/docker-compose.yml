@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  wow.api:
+    image: wow.api
+    build:
+      context: ./WoW.Api
+      dockerfile: Dockerfile

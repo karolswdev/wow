@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Dynamic;
 using System.Text;
+using Dapper;
+using System.ComponentModel.DataAnnotations;
+using Dapper.Contrib.Extensions;
 
 namespace WoW.Contract.Models
 {
@@ -13,6 +16,8 @@ namespace WoW.Contract.Models
       public string ReleaseNotes { get; set; }
       public int AddOnId { get; set; }
 
+      [Write(false)]
+      [Computed]
       public string Version {
          get {
             {

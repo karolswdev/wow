@@ -11,4 +11,4 @@ namespace WoW.Contract.Models
        public int NumberOfDownloads { get; set; }
        public int AddOnVersionId { get; set; }
     }
-} 
+}
